@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://ship.gd" id="2_nrb76"]
 
 [node name="ship" type="Sprite2D"]
+modulate = Color(1, 0.172549, 1, 1)
 position = Vector2(462, 266)
 texture = ExtResource("1_d6q2w")
 script = ExtResource("2_nrb76")
