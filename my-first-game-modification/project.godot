@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="my first script"
+config/name="my first game modified"
 run/main_scene="res://ship.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
