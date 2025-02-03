@@ -2,6 +2,8 @@ extends Sprite2D
 
 var speed = 400
 var angular_speed = PI
+@onready var distance: Label = $HUD/distance
+var travelled_distance: float = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -20,4 +22,6 @@ func _process(delta: float) -> void:
 	
 	position += velocity * delta
 	
+	travelled_distance += velocity.length() * delta
 	
+	distance.text = "%.02f" % travelled_distance
